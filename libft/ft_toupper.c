@@ -11,5 +11,22 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-// TODO: Implement ft_toupper according to the Libft subject.
+int ft_toupper(int c)
+{
+    if (c >= 'a' && c <= 'z')  
+        return (c - 32);  // Comment convertir ?
+    else
+        return c;  // Que retourner sinon ?
+}
+
+int main ()
+{
+    printf("%c\n", ft_toupper('h'));
+    printf("%c\n", ft_toupper('3'));
+    printf("%c\n", ft_toupper('s'));
+    printf("%c\n", ft_toupper('D'));
+
+    return 0;
+}

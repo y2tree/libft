@@ -11,5 +11,12 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-// TODO: Implement ft_tolower according to the Libft subject.
+int ft_tolower(int c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return(c + 32);
+    else
+        return (c);
+}

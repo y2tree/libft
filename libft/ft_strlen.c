@@ -6,7 +6,7 @@
 /*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 14:54:35 by vasari            #+#    #+#             */
-/*   Updated: 2025/11/05 14:55:01 by vasari           ###   ########.fr       */
+/*   Updated: 2025/11/20 22:44:35 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@ int ft_strlen(const char *s)
 {
     int i = 0;
     while (s[i] != '\0')
-    {
         i++;
-    }
     return (i);
 }
-/*
+
+
  #include <stdio.h>
  int main()
  {
     printf("%d", ft_strlen("dkwhbfcvcsd"));
     return (0);
  }
- */
+ 
