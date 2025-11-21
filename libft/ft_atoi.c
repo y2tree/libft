@@ -5,11 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 00:00:00 by student           #+#    #+#             */
-/*   Updated: 2025/11/21 13:24:54 by vasari           ###   ########.fr       */
+/*   Created: 2025/11/21 14:56:41 by vasari            #+#    #+#             */
+/*   Updated: 2025/11/21 14:56:41 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-// TODO: Implement ft_atoi according to the Libft subject.
