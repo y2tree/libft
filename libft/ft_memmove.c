@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                          :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: student <student@42.fr>                    +#+  +:+       +#+        */
+/*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 00:00:00 by student           #+#    #+#             */
-/*   Updated: 2025/11/05 00:00:00 by student          ###   ########.fr       */
+/*   Created: 2025/11/23 21:26:08 by vasari            #+#    #+#             */
+/*   Updated: 2025/11/23 23:22:55 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,18 @@
 void	*mini_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
-	const unsigned char	*s = (const unsigned char *)src;
-	size_t				i;
+	const unsigned char	*s;
 	size_t				i;
 
 	d = (unsigned char *)dest;
-	if (!src || !dest)
+	s = (const unsigned char *)src;
+	if (!dest || !src)
 		return (NULL);
 	if (d > s)
 	{
 		i = n;
-		while (i > 0)
-		{
-			i--;
+		while (i-- > 0)
 			d[i] = s[i];
-		}
 	}
 	else
 	{

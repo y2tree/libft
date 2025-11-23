@@ -6,24 +6,15 @@
 /*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 14:56:12 by vasari            #+#    #+#             */
-/*   Updated: 2025/11/21 19:52:38 by vasari           ###   ########.fr       */
+/*   Updated: 2025/11/23 21:58:29 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	len;
@@ -46,17 +37,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include "libft.h"
-
 // char	altmaj(unsigned int i, char c)
 // {
 // 	if (i % 2 == 0)
 // 		return (c - 32); // min -> maj
 // 	return (c);
 // }
-//
+
 // int	main(void)
 // {
 // 	char *s = "abcdef";

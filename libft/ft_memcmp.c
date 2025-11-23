@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                          :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: student <student@42.fr>                    +#+  +:+       +#+        */
+/*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 00:00:00 by student           #+#    #+#             */
-/*   Updated: 2025/11/05 00:00:00 by student          ###   ########.fr       */
+/*   Created: 2025/11/23 21:22:40 by vasari            #+#    #+#             */
+/*   Updated: 2025/11/23 21:23:11 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ int	mini_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-int	main(void)
-{
-	char	str1[] = "hello";
-	char	str2[] = "heelo";
-	char	str3[] = "abc";
-	char	str4[] = "abd";
+// int	main(void)
+// {
+// 	char	str1[] = "hello";
+// 	char	str2[] = "heelo";
+// 	char	str3[] = "abc";
+// 	char	str4[] = "abd";
 
-	printf("%d\n", mini_memcmp(str1, str2, 5)); // 0
-	printf("%d\n", mini_memcmp(str3, str4, 3)); // < 0 (car 'c' < 'd')
-	return (0);
-}
+// 	printf("%d\n", mini_memcmp(str1, str2, 5)); // 0
+// 	printf("%d\n", mini_memcmp(str3, str4, 3)); // < 0 (car 'c' < 'd')
+// 	return (0);
+// }

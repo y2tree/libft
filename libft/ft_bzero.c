@@ -6,19 +6,28 @@
 /*   By: vasari <vasari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 13:25:06 by vasari            #+#    #+#             */
-/*   Updated: 2025/11/21 13:33:29 by vasari           ###   ########.fr       */
+/*   Updated: 2025/11/23 23:15:39 by vasari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
+	size_t			i;
 
 	ptr = (unsigned char *)s;
-	for (size_t i = 0; i < n; i++)
+	i = 0;
+	while (i < n)
+	{
 		ptr[i] = 0;
+		i++;
+	}
 }
 
 /*
